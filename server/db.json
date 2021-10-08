@@ -1,0 +1,52 @@
+{
+  "contact": [
+    {
+      "full_name": "Balaram gayen",
+      "username": "balaram",
+      "email": "balaramgayen53501@gmail.com",
+      "phone": "07679556104",
+      "website": "balaram.com",
+      "id": 1
+    },
+    {
+      "full_name": "moumita kamila",
+      "username": "moumita",
+      "email": "moumitakamila04@gmail.com",
+      "phone": "4589632147",
+      "website": "moumita.com",
+      "id": 2
+    },
+    {
+      "full_name": "Krishna Naskar",
+      "username": "krishna",
+      "email": "krishnanaskar2806@gmail.com",
+      "phone": "7896321477",
+      "website": "krishna.com",
+      "id": 3
+    },
+    {
+      "full_name": "ganesh gayen",
+      "username": "ganesh",
+      "email": "ganesh@gmail.com",
+      "phone": "7896325896",
+      "website": "ganesh.com",
+      "id": 4
+    },
+    {
+      "full_name": "kartick gayen",
+      "username": "katrick",
+      "email": "kartick@gmail.com",
+      "phone": "78963215369",
+      "website": "kartick.com",
+      "id": 5
+    },
+    {
+      "full_name": "jhon smith",
+      "username": "jhon",
+      "email": "jhon@gmail.com",
+      "phone": "2589631478",
+      "website": "jhon.com",
+      "id": 6
+    }
+  ]
+}
