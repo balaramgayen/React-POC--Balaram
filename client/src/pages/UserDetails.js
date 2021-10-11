@@ -7,6 +7,8 @@ import "./css/main.css";
 export const UserDetails = () => {
   const { id } = useParams();
 
+  console.log(id);
+
   const [user, setUser] = useState({
     full_name: "",
     username: "",
@@ -20,11 +22,12 @@ export const UserDetails = () => {
   // getting user detail with id(coming from params)
   const loadUser = async () => {
     await axios
-      .get(`http://localhost:8000/contact/${id}`)
+      .get(`http://localhost:8080/api/user/getuser/${id}`)
       .then((res) => {
         setUser(res.data);
+        console.log(res.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("some error occoured", err));
   };
 
   useEffect(() => {

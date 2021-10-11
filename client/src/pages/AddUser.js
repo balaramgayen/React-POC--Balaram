@@ -27,7 +27,7 @@ export const AddUser = () => {
     e.preventDefault();
 
     axios
-      .post(`http://localhost:8000/contact`, newUsers)
+      .post(`http://localhost:8080/api/user/adduser`, newUsers)
       .then((res) => {
         history.push("/");
       })

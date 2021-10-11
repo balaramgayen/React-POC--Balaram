@@ -11,7 +11,7 @@ function AllUser() {
   // getting all user data and set it to useState
   const getUser = async () => {
     await axios
-      .get("http://localhost:8000/contact")
+      .get("http://localhost:8080/api/user/getuser")
       .then((res) => {
         setUsers(res.data);
       })
@@ -54,7 +54,6 @@ function AllUser() {
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th scope="col">id</th>
                   <th scope="col">Username</th>
                   <th scope="col">Email</th>
                   <th scope="col">Contact</th>
@@ -65,16 +64,18 @@ function AllUser() {
                 {users.length === 0 ? (
                   <h2>User Not found</h2>
                 ) : (
-                  users.map(({ id, username, email, phone }, key) => {
+                  users.map(({ _id, username, email, phone }, key) => {
+                    const fakeId = 0;
                     return (
                       <tr>
                         <Users
-                          id={id}
+                          id={_id}
                           username={username}
                           email={email}
                           phone={phone}
                           key={key}
                           onDelete={onDelete}
+                          fakeId={fakeId}
                         />
                       </tr>
                     );

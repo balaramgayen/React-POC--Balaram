@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Users = ({ id, username, email, phone, key, onDelete }) => {
+export const Users = ({ id, username, email, phone, onDelete }) => {
   const handleDelete = () => {
     onDelete(id);
   };
 
   return (
     <>
-      <th key={key} scope="row">
-        {id}
-      </th>
       <td>{username}</td>
       <td>{email}</td>
       <td>{phone}</td>
