@@ -25,13 +25,15 @@ function AllUser() {
   // this function will be fire when user click on delete button
   const onDelete = async (id) => {
     await axios
-      .delete(`http://localhost:8000/contact/${id}`)
+      .delete(`http://localhost:8080/api/user/${id}`)
       .then((res) => {
         setUsers(
           users.filter((user) => {
             return user.id !== id;
           })
         );
+
+        window.location.reload();
       })
       .catch((err) => alert(err));
   };

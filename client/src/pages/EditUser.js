@@ -21,7 +21,7 @@ export const EditUser = () => {
   // get user details with id(coming form params)
   const loadUser = async () => {
     await axios
-      .get(`http://localhost:8000/contact/${id}`)
+      .get(`http://localhost:8080/api/user/getuser/${id}`)
       .then((res) => {
         setUser(res.data);
       })
@@ -41,7 +41,7 @@ export const EditUser = () => {
     e.preventDefault();
 
     await axios
-      .put(`http://localhost:8000/contact/${id}`, user)
+      .put(`http://localhost:8080/api/user/updateuser/${id}`, user)
       .then((res) => {
         history.push("/");
       })
